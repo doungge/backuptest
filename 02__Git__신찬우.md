@@ -126,7 +126,7 @@ Staging Area에 있던것이 -> Repostiroty 로 옮겨진다.
 
 git log --stat :  각각의 버전별로 어떤 파일이 연류되어있는지 알수 있다.
 
-git log -p
+git log -p :  각버전마자 달라진 점을 확인해 볼수있는 명령어이다.
 
 git log --oneline : commit id, title 메시지만 조회
 
@@ -331,7 +331,7 @@ gi t pull
 
 ## CLONE (Remot Repository --> Local Repository(2))
 
-백업 받은 것을 다시 복원하는 방법
+백업 받은 것을 다시 복원하는 방법 (원격저장소 코드 다운로드)
 
 * `git clone [저장소 주소]`새로운 폴더에 복제 하는 방법이다.
 * `git clone [저장소 주소] mkdir [폴더명]` 을 사용하면 새로 만든 폴더안에 복제 하는 방법이다.
@@ -342,7 +342,7 @@ gi t pull
 
 git pull 을 사용하면 원격저장소에 있는 파일들을 다른 Local Repositroy로 불러 오는것이다.
 
-
+pull 을 자주하면서 업데이트 가 항목이 있는지 자주확인하는 것은 아주 좋은 습관이다.
 
 
 
@@ -352,3 +352,8 @@ git pull 을 사용하면 원격저장소에 있는 파일들을 다른 Local Re
 
 * issue tracker 기록 문제 기록 (협업기능과 시너지 좋다.)
 
+
+
+
+
+git fetch -> git merge FETCH_HEAD
