@@ -353,7 +353,15 @@ pull 을 자주하면서 업데이트 가 항목이 있는지 자주확인하는
 * issue tracker 기록 문제 기록 (협업기능과 시너지 좋다.)
 
 
+## git fetch
 
+​	`git pull` = `git fetch`; `git merge origin/master` (=`git merge FETCH_HEAD`) 
+
+> `git fetch`는 원격저장소에 올라올 것을 엡데이트만 하는 것이고 `git pull`은 업데이트와 동시에 병합까지 같이 한 것이다.
+>
+> GIT은 `git fetch`를 할때마다 `.git/FETCH_HEAD	`파일을 만든다.
+>
+> 신중하게 데이터를 가지고올때 사용하는 것다. (잘 모르겠다.)
 
 
 git fetch -> git merge FETCH_HEAD
